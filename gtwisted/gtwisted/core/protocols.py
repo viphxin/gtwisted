@@ -98,8 +98,9 @@ class ServerFactory:
         p.start()
         self.sessionno +=1
         #As mentioned, that is the desired behaviour. Keep the handler alive to keep the socket alive.
-        while 1:
-            gevent.sleep(300)
+        # while 1:
+        #     gevent.sleep(300)
+        t.join()
         
 class ClientFactory:
     """客户端的协议工厂\n
