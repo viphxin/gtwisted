@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: gtwisted
+Version: 0.2.0a0
+Summary: Achieve twisted based on gevent
+Home-page: http://www.9miao.com/
+Author: lanjinmin
+Author-email: zhuiming.mu@gmail.com
+License: MIT
+Description: Achieve twisted based on gevent
+Keywords: gevent twisted pb
+Platform: UNKNOWN
