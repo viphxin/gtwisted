@@ -62,6 +62,8 @@ class Transport(Greenlet):
         Greenlet.__init__(self)
         self.inbox = queue.Queue()
         self.skt = skt
+        #add TCP_NODELAY
+        self.skt.setsockopt(socket.SOL_TCP, socket.TCP_NODELAY, 1)
         self.address = address
         self.sessionno = sessionno
         
