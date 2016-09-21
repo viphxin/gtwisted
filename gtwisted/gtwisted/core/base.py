@@ -50,7 +50,7 @@ class Timer(Greenlet):
         gevent.sleep(self.seconds)
         return self.delay_call.call()
         
-
+import socket
 class Transport(Greenlet):
     
     def __init__(self,skt,address,sessionno=0):
